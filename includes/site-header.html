@@ -1,0 +1,61 @@
+<!-- Global Header -->
+<header class="sticky top-0 z-50">
+  <nav class="glass mx-3 mt-3 rounded-2xl">
+    <div class="flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center gap-3 group" aria-label="Growup Technology Home">
+        <img src="logo.jpeg" alt="Growup Technology" class="h-10 w-10 rounded-xl object-cover border border-accent/25 shadow-glow" />
+        <span class="leading-tight">
+          <span class="block text-base font-semibold tracking-tight">Growup Technology</span>
+          <span class="block text-xs text-slate-300">Custom Software • Web • Deployment</span>
+        </span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-4 text-sm">
+        <a data-nav="home" class="nav-link hover:text-accent transition-colors focus-ring" href="index.html">Home</a>
+        <a data-nav="about" class="nav-link hover:text-accent transition-colors focus-ring" href="about.html">About</a>
+        <a data-nav="services" class="nav-link hover:text-accent transition-colors focus-ring" href="services.html">Services</a>
+        <a data-nav="process" class="nav-link hover:text-accent transition-colors focus-ring" href="process.html">Process</a>
+        <a data-nav="pricing" class="nav-link hover:text-accent transition-colors focus-ring" href="pricing.html">Pricing</a>
+        <a data-nav="store" class="nav-link hover:text-accent transition-colors focus-ring" href="store.html">Store</a>
+        <a data-nav="marketplace" class="nav-link hover:text-accent transition-colors focus-ring" href="software-marketplace.html">Marketplace</a>
+        <!-- <a data-nav="payment" class="nav-link hover:text-accent transition-colors focus-ring" href="payment.html">Payment</a> -->
+        <a data-nav="contact" class="nav-link hover:text-accent transition-colors focus-ring" href="contact.html">Contact</a>
+        <a href="contact.html" class="inline-flex items-center gap-2 rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-slate-950 shadow-glow hover:bg-accent/90 transition focus-ring">
+          Get a Quote
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+
+      <button
+        id="navToggle"
+        class="md:hidden inline-flex items-center justify-center rounded-xl p-2 border border-slate-700/60 hover:border-accent/40 hover:text-accent transition focus-ring"
+        aria-label="Open menu"
+        aria-controls="mobileMenu"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-700/60">
+      <div class="px-4 py-3 flex flex-col gap-2 text-sm">
+        <a data-nav="home" class="nav-link px-3 py-2 rounded-xl hover:bg-slate-800/60 transition focus-ring" href="index.html">Home</a>
+        <a data-nav="about" class="nav-link px-3 py-2 rounded-xl hover:bg-slate-800/60 transition focus-ring" href="about.html">About</a>
+        <a data-nav="services" class="nav-link px-3 py-2 rounded-xl hover:bg-slate-800/60 transition focus-ring" href="services.html">Services</a>
+        <a data-nav="process" class="nav-link px-3 py-2 rounded-xl hover:bg-slate-800/60 transition focus-ring" href="process.html">Process</a>
+        <a data-nav="pricing" class="nav-link px-3 py-2 rounded-xl hover:bg-slate-800/60 transition focus-ring" href="pricing.html">Pricing</a>
+        <a data-nav="store" class="nav-link px-3 py-2 rounded-xl hover:bg-slate-800/60 transition focus-ring" href="store.html">Store</a>
+        <a data-nav="marketplace" class="nav-link px-3 py-2 rounded-xl hover:bg-slate-800/60 transition focus-ring" href="software-marketplace.html">Marketplace</a>
+        <a data-nav="payment" class="nav-link px-3 py-2 rounded-xl hover:bg-slate-800/60 transition focus-ring" href="payment.html">Payment</a>
+        <a data-nav="contact" class="nav-link px-3 py-2 rounded-xl hover:bg-slate-800/60 transition focus-ring" href="contact.html">Contact</a>
+        <a href="contact.html" class="mt-1 inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-slate-950 shadow-glow hover:bg-accent/90 transition focus-ring">
+          Get a Quote
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
