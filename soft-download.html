@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Growup Technology software download page with local checkout, license unlock, and installer access." />
+  <title>Growup Technology — Soft Download</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { backdrop-filter: blur(12px); background: rgba(15, 23, 42, 0.35); border: 1px solid rgba(148, 163, 184, 0.25); }
+    .shadow-glow { box-shadow: 0 0 30px rgba(2, 132, 199, 0.35); }
+    .focus-ring:focus-visible { outline: 2px solid rgba(2, 132, 199, 0.9); outline-offset: 2px; }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { deep: '#0f172a', accent: '#0284c7' },
+          boxShadow: { glow: '0 0 30px rgba(2, 132, 199, 0.35)' }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body id="top" class="min-h-screen bg-slate-950 text-slate-100">
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-accent/25 blur-3xl"></div>
+    <div class="absolute top-1/3 -right-28 h-80 w-80 rounded-full bg-cyan-400/10 blur-3xl"></div>
+    <div class="absolute bottom-0 left-1/2 h-96 w-[46rem] -translate-x-1/2 rounded-t-[999px] bg-slate-900/40 blur-2xl"></div>
+  </div>
+
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="relative pt-16 md:pt-20 pb-10">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="rounded-3xl border border-slate-700/60 bg-gradient-to-b from-slate-900/40 to-slate-950/60 p-6 md:p-10">
+          <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+            <div class="max-w-2xl">
+              <div class="inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/10 px-4 py-2 text-xs md:text-sm">
+                <span class="h-2 w-2 rounded-full bg-accent shadow-glow" aria-hidden="true"></span>
+                Growup Store download page
+              </div>
+              <h1 class="mt-6 text-3xl md:text-5xl font-bold leading-tight tracking-tight" id="softTitle">Soft Download</h1>
+              <p class="mt-4 text-slate-300 text-base md:text-lg leading-relaxed" id="softSubtitle">
+                Review the selected product, complete checkout in the Growup marketplace, and unlock the installer here.
+              </p>
+
+              <div class="mt-6 flex flex-wrap items-center gap-3">
+                <div class="inline-flex items-center gap-2 rounded-full border border-slate-700/60 bg-slate-900/30 px-4 py-2">
+                  <i class="fa-solid fa-shield-halved text-accent" aria-hidden="true"></i>
+                  <span class="text-sm">Secure download flow</span>
+                </div>
+                <div class="inline-flex items-center gap-2 rounded-full border border-slate-700/60 bg-slate-900/30 px-4 py-2">
+                  <i class="fa-solid fa-lock text-accent" aria-hidden="true"></i>
+                  <span class="text-sm" id="licenseStatus">Locked until checkout</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full lg:w-[420px]">
+              <div class="glass rounded-3xl p-5 md:p-6 shadow-glow">
+                <div class="flex items-start gap-3">
+                  <span class="mt-0.5 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-accent/15 border border-accent/25">
+                    <i class="fa-solid fa-download text-accent" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <div class="font-semibold" id="productTag">Product</div>
+                    <div class="text-xs text-slate-400 mt-1" id="productMeta">—</div>
+                  </div>
+                </div>
+
+                <div class="mt-5 space-y-3">
+                  <a id="storeMsBtn" href="#" class="block w-full rounded-2xl bg-accent px-5 py-3 text-sm font-semibold text-slate-950 shadow-glow hover:bg-accent/90 transition focus-ring" aria-label="Buy license in Growup Store">
+                    <div class="flex items-center justify-center gap-2">
+                      <i class="fa-solid fa-bag-shopping text-slate-950" aria-hidden="true"></i>
+                      <span>Buy License</span>
+                    </div>
+                  </a>
+
+                  <a id="storePlayBtn" href="#" class="block w-full rounded-2xl border border-slate-700/70 bg-slate-950/20 px-5 py-3 text-sm font-semibold text-slate-200 hover:border-accent/40 hover:text-accent transition focus-ring" aria-label="View product in marketplace">
+                    <div class="flex items-center justify-center gap-2">
+                      <i class="fa-solid fa-store" aria-hidden="true"></i>
+                      <span>View in Marketplace</span>
+                    </div>
+                  </a>
+
+                  <div id="realDownloadWrap" class="hidden rounded-2xl border border-slate-700/60 bg-slate-950/20 px-4 py-3">
+                    <div class="text-xs text-slate-400">Installer is unlocked</div>
+                    <a id="realDownloadLink" href="#" download class="mt-2 inline-flex items-center justify-center gap-2 w-full rounded-2xl bg-emerald-500/20 border border-emerald-400/30 px-5 py-3 text-sm font-semibold text-emerald-200 hover:bg-emerald-500/25 transition focus-ring" aria-label="Download installer">
+                      <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                      <span>Download Installer</span>
+                    </a>
+                  </div>
+
+                  <div id="lockedHint" class="rounded-2xl border border-slate-700/60 bg-slate-950/20 px-4 py-3 text-sm text-slate-300">
+                    <div class="font-semibold text-slate-200">Not purchased yet</div>
+                    <div class="text-xs text-slate-400 mt-1">Complete checkout in the Growup Marketplace to unlock this installer.</div>
+                    <a href="software-marketplace.html" class="mt-3 inline-flex items-center justify-center gap-2 w-full rounded-2xl bg-slate-900/30 border border-slate-700/60 px-5 py-3 text-sm font-semibold text-slate-200 hover:border-accent/40 hover:text-accent transition focus-ring">
+                      <i class="fa-solid fa-store" aria-hidden="true"></i>
+                      <span>Open Marketplace Checkout</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="rounded-2xl border border-slate-700/60 bg-slate-900/20 p-4">
+              <div class="text-accent font-semibold"><i class="fa-solid fa-file-shield mr-2" aria-hidden="true"></i> Verified installer</div>
+              <div class="text-xs text-slate-300 mt-1">Local download flow ready for your real installer URL later.</div>
+            </div>
+            <div class="rounded-2xl border border-slate-700/60 bg-slate-900/20 p-4">
+              <div class="text-accent font-semibold"><i class="fa-solid fa-key mr-2" aria-hidden="true"></i> License key</div>
+              <div class="text-xs text-slate-300 mt-1">Generated during checkout flow.</div>
+            </div>
+            <div class="rounded-2xl border border-slate-700/60 bg-slate-900/20 p-4">
+              <div class="text-accent font-semibold"><i class="fa-solid fa-wand-magic-sparkles mr-2" aria-hidden="true"></i> Quick setup</div>
+              <div class="text-xs text-slate-300 mt-1">Install → apply key → configure database.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="siteFooter"></div>
+  </main>
+
+  <script>
+    async function loadFragment(id, path) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      try {
+        const res = await fetch(path, { cache: 'no-store' });
+        if (!res.ok) throw new Error('Failed');
+        el.innerHTML = await res.text();
+      } catch {}
+    }
+    loadFragment('siteHeader', 'includes/site-header.html');
+    loadFragment('siteFooter', 'includes/site-footer.html');
+  </script>
+
+  <script src="includes/site.js"></script>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const product = params.get('product') || 'software';
+      const name = params.get('name') || product;
+      const price = params.get('price') || '';
+
+      const softTitle = document.getElementById('softTitle');
+      const productTag = document.getElementById('productTag');
+      const productMeta = document.getElementById('productMeta');
+      const softSubtitle = document.getElementById('softSubtitle');
+
+      const licenseStatus = document.getElementById('licenseStatus');
+      const lockedHint = document.getElementById('lockedHint');
+      const realDownloadWrap = document.getElementById('realDownloadWrap');
+      const realDownloadLink = document.getElementById('realDownloadLink');
+
+      const storeMsBtn = document.getElementById('storeMsBtn');
+      const storePlayBtn = document.getElementById('storePlayBtn');
+      const lockedCheckoutLink = lockedHint ? lockedHint.querySelector('a') : null;
+
+      const productStatusKey = `growup:checkout:${product}:status`;
+      const productInstallerKey = `growup:checkout:${product}:installerUrl`;
+      const productFileNameKey = `growup:checkout:${product}:installerFileName`;
+      const status = sessionStorage.getItem(productStatusKey) || sessionStorage.getItem('growup:lastCheckoutStatus');
+      const installerUrl = sessionStorage.getItem(productInstallerKey) || sessionStorage.getItem('growup:installerUrl');
+      const installerFileName = sessionStorage.getItem(productFileNameKey) || sessionStorage.getItem('growup:installerFileName');
+
+      const isUnlocked = status === 'unlocked' && installerUrl;
+
+      if (softTitle) softTitle.textContent = name;
+      if (productTag) productTag.textContent = name;
+      if (productMeta) productMeta.textContent = price ? `Price: ${price}` : 'One-time license';
+
+      // Store buttons just navigate/trigger download page; real download appears when unlocked.
+      const setStoreButtonsLocked = () => {
+        const checkoutUrl = new URL('software-marketplace.html', window.location.href);
+        checkoutUrl.searchParams.set('product', product);
+        checkoutUrl.searchParams.set('name', name);
+        if (price) checkoutUrl.searchParams.set('price', price);
+        checkoutUrl.searchParams.set('checkout', '1');
+
+        if (storeMsBtn) {
+          storeMsBtn.href = checkoutUrl.toString();
+        }
+        if (storePlayBtn) {
+          storePlayBtn.href = checkoutUrl.toString();
+        }
+        if (lockedCheckoutLink) {
+          lockedCheckoutLink.href = checkoutUrl.toString();
+        }
+      };
+
+      const setStoreButtonsUnlocked = () => {
+        // Make store buttons download the unlocked installer
+        if (storeMsBtn) {
+          storeMsBtn.href = installerUrl;
+          storeMsBtn.setAttribute('download', installerFileName || `${product}-installer`);
+        }
+        if (storePlayBtn) {
+          storePlayBtn.href = installerUrl;
+          storePlayBtn.setAttribute('download', installerFileName || `${product}-installer`);
+        }
+      };
+
+      if (!isUnlocked) {
+        if (licenseStatus) licenseStatus.textContent = 'Locked until checkout';
+        setStoreButtonsLocked();
+        if (realDownloadWrap) realDownloadWrap.classList.add('hidden');
+        if (lockedHint) lockedHint.classList.remove('hidden');
+        return;
+      }
+
+      if (licenseStatus) licenseStatus.textContent = 'Unlocked — download ready';
+      if (lockedHint) lockedHint.classList.add('hidden');
+      if (realDownloadWrap) realDownloadWrap.classList.remove('hidden');
+
+      if (realDownloadLink) {
+        realDownloadLink.href = installerUrl;
+        realDownloadLink.download = installerFileName || `${product}-installer`;
+      }
+
+      setStoreButtonsUnlocked();
+    })();
+  </script>
+</body>
+</html>
+

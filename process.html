@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Growup Technology — Process: requirements to development, Cloudflare optimization and AWS hosting." />
+  <title>Growup Technology — Process</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { backdrop-filter: blur(12px); background: rgba(15, 23, 42, 0.35); border: 1px solid rgba(148, 163, 184, 0.25); }
+    .shadow-glow { box-shadow: 0 0 30px rgba(2, 132, 199, 0.35); }
+    .focus-ring:focus-visible { outline: 2px solid rgba(2, 132, 199, 0.9); outline-offset: 2px; }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { deep: '#0f172a', accent: '#0284c7' },
+          boxShadow: { glow: '0 0 30px rgba(2, 132, 199, 0.35)' }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body id="top" class="min-h-screen bg-slate-950 text-slate-100">
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-accent/25 blur-3xl"></div>
+    <div class="absolute top-1/3 -right-28 h-80 w-80 rounded-full bg-cyan-400/10 blur-3xl"></div>
+    <div class="absolute bottom-0 left-1/2 h-96 w-[46rem] -translate-x-1/2 rounded-t-[999px] bg-slate-900/40 blur-2xl"></div>
+  </div>
+
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="relative pt-16 md:pt-20 pb-10">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="rounded-3xl border border-slate-700/60 bg-gradient-to-b from-slate-900/40 to-slate-950/60 p-6 md:p-10">
+          <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+            <div class="max-w-2xl">
+              <div class="inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/10 px-4 py-2 text-xs md:text-sm">
+                <span class="h-2 w-2 rounded-full bg-accent shadow-glow" aria-hidden="true"></span>
+                Requirement → Development → Cloud → Launch
+              </div>
+              <h1 class="mt-6 text-3xl md:text-5xl font-bold leading-tight tracking-tight" id="process">
+                Our process is built for predictable delivery
+              </h1>
+              <p class="mt-4 text-slate-300 text-base md:text-lg leading-relaxed">
+                A clean, measurable path from requirements to deployed, optimized infrastructure.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-700/60 bg-slate-900/30 px-4 py-3 w-full lg:max-w-sm">
+              <div class="font-semibold text-accent"><i class="fa-solid fa-diagram-project mr-2" aria-hidden="true"></i> What you can expect</div>
+              <div class="text-xs text-slate-400 mt-2">
+                Clear milestones, security-first implementation, and Cloudflare + AWS deployment support.
+              </div>
+              <div class="mt-3 flex gap-2 flex-wrap">
+                <span class="inline-flex items-center gap-2 rounded-xl bg-accent/10 border border-accent/25 px-3 py-1 text-xs font-semibold text-accent"><i class="fa-solid fa-shield-check" aria-hidden="true"></i> Secure</span>
+                <span class="inline-flex items-center gap-2 rounded-xl bg-cyan-400/10 border border-cyan-400/20 px-3 py-1 text-xs font-semibold text-cyan-200"><i class="fa-solid fa-bolt" aria-hidden="true"></i> Fast</span>
+                <span class="inline-flex items-center gap-2 rounded-xl bg-sky-500/10 border border-sky-500/20 px-3 py-1 text-xs font-semibold text-sky-200"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i> Cloud-ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-12">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-end justify-between gap-4 flex-wrap">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold">Delivery timeline</h2>
+            <p class="mt-3 text-slate-300">Transparent steps so you always know what’s happening.</p>
+          </div>
+        </div>
+
+        <div class="mt-8 grid md:grid-cols-2 gap-5">
+          <div class="rounded-3xl border border-slate-700/60 bg-slate-900/30 p-6">
+            <div class="flex items-center gap-3">
+              <span class="h-10 w-10 rounded-2xl bg-accent/15 border border-accent/25 text-accent font-bold inline-flex items-center justify-center">1</span>
+              <div>
+                <div class="font-semibold text-lg">Requirement Gathering</div>
+                <div class="text-sm text-slate-300">Define outcomes, scope, milestones, and constraints.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-700/60 bg-slate-900/30 p-6">
+            <div class="flex items-center gap-3">
+              <span class="h-10 w-10 rounded-2xl bg-sky-500/10 border border-sky-500/20 text-sky-200 font-bold inline-flex items-center justify-center">2</span>
+              <div>
+                <div class="font-semibold text-lg">Development</div>
+                <div class="text-sm text-slate-300">UX-first UI, modular code, iterative delivery.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-700/60 bg-slate-900/30 p-6">
+            <div class="flex items-center gap-3">
+              <span class="h-10 w-10 rounded-2xl bg-cyan-400/10 border border-cyan-400/20 text-cyan-200 font-bold inline-flex items-center justify-center">3</span>
+              <div>
+                <div class="font-semibold text-lg">Cloudflare Optimization</div>
+                <div class="text-sm text-slate-300">Caching, edge performance, and protection.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-700/60 bg-slate-900/30 p-6">
+            <div class="flex items-center gap-3">
+              <span class="h-10 w-10 rounded-2xl bg-accent/15 border border-accent/25 text-accent font-bold inline-flex items-center justify-center">4</span>
+              <div>
+                <div class="font-semibold text-lg">AWS Cloud Hosting</div>
+                <div class="text-sm text-slate-300">Reliable infrastructure for scalability and uptime.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 rounded-3xl border border-slate-700/60 bg-slate-900/20 p-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <div class="font-semibold">Want a tailored plan?</div>
+              <div class="text-sm text-slate-300 mt-1">Send your requirements and get a transparent package recommendation.</div>
+            </div>
+            <a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-accent px-6 py-3 font-semibold text-slate-950 shadow-glow hover:bg-accent/90 transition focus-ring">
+              Contact Growup Technology
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="siteFooter"></div>
+  </main>
+
+  <script src="includes/site.js"></script>
+</body>
+</html>
+

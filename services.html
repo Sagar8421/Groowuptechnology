@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Growup Technology — Services: custom websites, bespoke software, and management systems (CRM/ERP)." />
+  <title>Growup Technology — Services</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { backdrop-filter: blur(12px); background: rgba(15, 23, 42, 0.35); border: 1px solid rgba(148, 163, 184, 0.25); }
+    .shadow-glow { box-shadow: 0 0 30px rgba(2, 132, 199, 0.35); }
+    .focus-ring:focus-visible { outline: 2px solid rgba(2, 132, 199, 0.9); outline-offset: 2px; }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            deep: '#0f172a',
+            accent: '#0284c7'
+          },
+          boxShadow: { glow: '0 0 30px rgba(2, 132, 199, 0.35)' }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body id="top" class="min-h-screen bg-slate-950 text-slate-100">
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-accent/25 blur-3xl"></div>
+    <div class="absolute top-1/3 -right-28 h-80 w-80 rounded-full bg-cyan-400/10 blur-3xl"></div>
+    <div class="absolute bottom-0 left-1/2 h-96 w-[46rem] -translate-x-1/2 rounded-t-[999px] bg-slate-900/40 blur-2xl"></div>
+  </div>
+
+  <!-- Header -->
+  <div id="siteHeader"></div>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="relative pt-16 md:pt-20 pb-10">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="rounded-3xl border border-slate-700/60 bg-gradient-to-b from-slate-900/40 to-slate-950/60 p-6 md:p-10">
+          <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
+            <div class="max-w-2xl">
+              <div class="inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/10 px-4 py-2 text-xs md:text-sm">
+                <span class="h-2 w-2 rounded-full bg-accent shadow-glow" aria-hidden="true"></span>
+                Enterprise-grade delivery, affordable packages.
+              </div>
+              <h1 class="mt-6 text-3xl md:text-5xl font-bold leading-tight tracking-tight">Deep-dive into our services</h1>
+              <p class="mt-4 text-slate-300 text-base md:text-lg leading-relaxed">
+                From high-converting websites to tailored business applications and management systems—built to scale and deployed with Cloudflare + AWS.
+              </p>
+            </div>
+            <div class="flex gap-3">
+              <div class="rounded-2xl border border-slate-700/60 bg-slate-900/30 px-4 py-3">
+                <div class="text-accent font-semibold"><i class="fa-solid fa-layer-group mr-2" aria-hidden="true"></i> Websites</div>
+                <div class="text-xs text-slate-400 mt-1">Landing pages &amp; e-commerce</div>
+              </div>
+              <div class="rounded-2xl border border-slate-700/60 bg-slate-900/30 px-4 py-3">
+                <div class="text-sky-200 font-semibold"><i class="fa-solid fa-code mr-2" aria-hidden="true"></i> Software</div>
+                <div class="text-xs text-slate-400 mt-1">APIs &amp; workflow apps</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <article class="rounded-3xl border border-slate-700/60 bg-slate-900/25 p-6">
+              <div class="flex items-center gap-3">
+                <span class="h-12 w-12 rounded-2xl bg-accent/15 border border-accent/25 inline-flex items-center justify-center shadow-glow">
+                  <i class="fa-solid fa-globe text-accent" aria-hidden="true"></i>
+                </span>
+                <h2 class="text-xl font-semibold">Custom Websites</h2>
+              </div>
+              <p class="mt-3 text-slate-300 text-sm leading-relaxed">Custom, responsive websites with conversion-focused UX and SEO-friendly structure.</p>
+              <ul class="mt-5 space-y-2 text-sm text-slate-300">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Tailored UI &amp; components</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> E-commerce &amp; integrations</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Deployment guidance</li>
+              </ul>
+            </article>
+
+            <article class="rounded-3xl border border-slate-700/60 bg-slate-900/25 p-6">
+              <div class="flex items-center gap-3">
+                <span class="h-12 w-12 rounded-2xl bg-cyan-400/10 border border-cyan-400/20 inline-flex items-center justify-center">
+                  <i class="fa-solid fa-sitemap text-cyan-200" aria-hidden="true"></i>
+                </span>
+                <h2 class="text-xl font-semibold">Bespoke Software</h2>
+              </div>
+              <p class="mt-3 text-slate-300 text-sm leading-relaxed">Tailored business applications built around your workflows—secure, scalable, and maintainable.</p>
+              <ul class="mt-5 space-y-2 text-sm text-slate-300">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Workflow automation</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Secure APIs</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Auth-ready architecture</li>
+              </ul>
+            </article>
+
+            <article class="rounded-3xl border border-slate-700/60 bg-slate-900/25 p-6">
+              <div class="flex items-center gap-3">
+                <span class="h-12 w-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 inline-flex items-center justify-center">
+                  <i class="fa-solid fa-clipboard-check text-sky-200" aria-hidden="true"></i>
+                </span>
+                <h2 class="text-xl font-semibold">Custom Management Systems</h2>
+              </div>
+              <p class="mt-3 text-slate-300 text-sm leading-relaxed">CRM/ERP &amp; inventory management that improves clarity, speed, and accountability.</p>
+              <ul class="mt-5 space-y-2 text-sm text-slate-300">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> CRM / ERP / Inventory modules</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Role-based access &amp; reporting</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Scaling support</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS TIMELINE -->
+    <section id="process" class="pb-12">
+
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-end justify-between gap-4 flex-wrap">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold">Our Process</h2>
+            <p class="mt-3 text-slate-300">A clean, predictable delivery path from requirements to cloud hosting.</p>
+          </div>
+          <div class="inline-flex items-center gap-2 text-xs rounded-full border border-slate-700/60 bg-slate-900/30 px-4 py-2">
+            <i class="fa-solid fa-diagram-project text-accent" aria-hidden="true"></i>
+            Requirement → Cloud → Launch
+          </div>
+        </div>
+
+        <div class="mt-8 grid md:grid-cols-2 gap-5">
+          <div class="rounded-3xl border border-slate-700/60 bg-slate-900/30 p-6">
+            <div class="flex items-center gap-3">
+              <span class="h-10 w-10 rounded-2xl bg-accent/15 border border-accent/25 text-accent font-bold inline-flex items-center justify-center">1</span>
+              <div>
+                <div class="font-semibold text-lg">Requirement Gathering</div>
+                <div class="text-sm text-slate-300">Define outcomes, scope, milestones, and constraints.</div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-slate-700/60 bg-slate-900/30 p-6">
+            <div class="flex items-center gap-3">
+              <span class="h-10 w-10 rounded-2xl bg-sky-500/10 border border-sky-500/20 text-sky-200 font-bold inline-flex items-center justify-center">2</span>
+              <div>
+                <div class="font-semibold text-lg">Development</div>
+                <div class="text-sm text-slate-300">UX-first UI, modular code, iterative delivery.</div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-slate-700/60 bg-slate-900/30 p-6">
+            <div class="flex items-center gap-3">
+              <span class="h-10 w-10 rounded-2xl bg-cyan-400/10 border border-cyan-400/20 text-cyan-200 font-bold inline-flex items-center justify-center">3</span>
+              <div>
+                <div class="font-semibold text-lg">Cloudflare Optimization</div>
+                <div class="text-sm text-slate-300">Caching, edge performance, and protection.</div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-slate-700/60 bg-slate-900/30 p-6">
+            <div class="flex items-center gap-3">
+              <span class="h-10 w-10 rounded-2xl bg-accent/15 border border-accent/25 text-accent font-bold inline-flex items-center justify-center">4</span>
+              <div>
+                <div class="font-semibold text-lg">AWS Cloud Hosting</div>
+                <div class="text-sm text-slate-300">Reliable infrastructure for scalability and uptime.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 rounded-3xl border border-slate-700/60 bg-slate-900/20 p-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <div class="font-semibold">Want a tailored plan?</div>
+              <div class="text-sm text-slate-300 mt-1">Send your requirements and get a transparent package recommendation.</div>
+            </div>
+            <a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-accent px-6 py-3 font-semibold text-slate-950 shadow-glow hover:bg-accent/90 transition focus-ring">
+              Contact Growup Technology
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="siteFooter"></div>
+  </main>
+
+
+
+  <script src="includes/site.js"></script>
+</body>
+</html>
+

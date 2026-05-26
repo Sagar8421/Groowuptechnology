@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Growup Technology — Pricing for custom software & websites." />
+  <title>Growup Technology — Pricing</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { backdrop-filter: blur(12px); background: rgba(15, 23, 42, 0.35); border: 1px solid rgba(148, 163, 184, 0.25); }
+    .shadow-glow { box-shadow: 0 0 30px rgba(2, 132, 199, 0.35); }
+    .focus-ring:focus-visible { outline: 2px solid rgba(2, 132, 199, 0.9); outline-offset: 2px; }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { deep: '#0f172a', accent: '#0284c7' },
+          boxShadow: { glow: '0 0 30px rgba(2, 132, 199, 0.35)' }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body id="top" class="min-h-screen bg-slate-950 text-slate-100">
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-accent/25 blur-3xl"></div>
+    <div class="absolute top-1/3 -right-28 h-80 w-80 rounded-full bg-cyan-400/10 blur-3xl"></div>
+    <div class="absolute bottom-0 left-1/2 h-96 w-[46rem] -translate-x-1/2 rounded-t-[999px] bg-slate-900/40 blur-2xl"></div>
+  </div>
+
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="relative pt-16 md:pt-20 pb-10">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="rounded-3xl border border-slate-700/60 bg-gradient-to-b from-slate-900/40 to-slate-950/60 p-6 md:p-10">
+          <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
+            <div class="max-w-2xl">
+              <div class="inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/10 px-4 py-2 text-xs md:text-sm">
+                <span class="h-2 w-2 rounded-full bg-accent shadow-glow" aria-hidden="true"></span>
+                Transparent pricing • Milestone delivery
+              </div>
+              <h1 class="mt-6 text-3xl md:text-5xl font-bold leading-tight tracking-tight" id="pricing">
+                Pricing built for realistic timelines & business outcomes
+              </h1>
+              <p class="mt-4 text-slate-300 text-base md:text-lg leading-relaxed">
+                Growup Technology offers scope-based packages for websites, custom software, and cloud deployment.
+                You get clear milestones, predictable deliverables, and AWS/Cloudflare-ready deployment support.
+              </p>
+
+              <div class="mt-7 flex flex-col sm:flex-row gap-3">
+                <a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-accent px-6 py-3 font-semibold text-slate-950 shadow-glow hover:bg-accent/90 transition focus-ring">
+                  Get a Quote
+                  <i class="fa-solid fa-file-signature" aria-hidden="true"></i>
+                </a>
+                <a href="services.html" class="inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 font-semibold border border-slate-700/70 hover:border-accent/40 hover:text-accent transition focus-ring">
+                  Explore Services
+                  <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="w-full lg:max-w-sm">
+              <div class="rounded-3xl border border-slate-700/60 bg-slate-900/30 p-5 md:p-6">
+                <div class="flex items-start gap-3">
+                  <span class="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-accent/15 border border-accent/25 shadow-glow">
+                    <i class="fa-solid fa-hand-holding-dollar text-accent" aria-hidden="true"></i>
+                  </span>
+                  <div>
+                    <div class="font-semibold text-lg">How pricing works</div>
+                    <div class="text-sm text-slate-400 mt-1">
+                      Clear scope → milestone plan → delivery → deployment support.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-5 space-y-3 text-sm text-slate-300">
+                  <div class="rounded-2xl bg-slate-950/20 border border-slate-700/60 p-4">
+                    <div class="font-semibold text-slate-200">No surprise scope creep</div>
+                    <div class="text-slate-400 mt-1">We lock requirements early and confirm milestones.</div>
+                  </div>
+                  <div class="rounded-2xl bg-slate-950/20 border border-slate-700/60 p-4">
+                    <div class="font-semibold text-slate-200">Milestone-based delivery</div>
+                    <div class="text-slate-400 mt-1">You can review progress and approve before the next step.</div>
+                  </div>
+                  <div class="rounded-2xl bg-slate-950/20 border border-slate-700/60 p-4">
+                    <div class="font-semibold text-slate-200">Deployment included</div>
+                    <div class="text-slate-400 mt-1">AWS hosting + Cloudflare optimization guidance.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="rounded-2xl border border-slate-700/60 bg-slate-900/20 p-6">
+              <div class="text-accent font-semibold">Starter</div>
+              <div class="text-3xl font-extrabold mt-3">₹ 25k+</div>
+              <div class="text-xs text-slate-400 mt-1">Best for landing pages & small MVPs</div>
+              <ul class="mt-4 space-y-2 text-sm text-slate-300">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> UX-ready pages/components</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> SEO-friendly structure</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Deployment guidance</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-slate-700/60 bg-slate-900/20 p-6">
+              <div class="text-accent font-semibold">Business</div>
+              <div class="text-3xl font-extrabold mt-3">₹ 60k+</div>
+              <div class="text-xs text-slate-400 mt-1">Best for custom apps & integrations</div>
+              <ul class="mt-4 space-y-2 text-sm text-slate-300">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Workflow automation</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Secure APIs / auth-ready</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Cloud + edge optimization</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-slate-700/60 bg-slate-900/20 p-6">
+              <div class="text-accent font-semibold">Enterprise</div>
+              <div class="text-3xl font-extrabold mt-3">₹ 1L+</div>
+              <div class="text-xs text-slate-400 mt-1">Best for CRM/ERP/Inventory systems</div>
+              <ul class="mt-4 space-y-2 text-sm text-slate-300">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Role-based access & reporting</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Maintainable architecture</li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-accent mt-1" aria-hidden="true"></i> Deployment + hardening support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-14">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="rounded-3xl border border-slate-700/60 bg-slate-900/20 p-6 md:p-10">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+              <div class="font-semibold text-2xl">Need exact pricing?</div>
+              <p class="text-sm text-slate-300 mt-2">Send your requirements and we’ll map your scope to the right package + milestone plan.</p>
+            </div>
+            <a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-accent px-6 py-3 font-semibold text-slate-950 shadow-glow hover:bg-accent/90 transition focus-ring">
+              Request a Pricing Plan
+              <i class="fa-solid fa-file-signature" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="siteFooter"></div>
+  </main>
+
+  <script src="includes/site.js"></script>
+</body>
+</html>
+
